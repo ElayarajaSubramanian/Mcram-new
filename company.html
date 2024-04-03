@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McRam | Provide better Engineering Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
+</head>
+<body>
+    <header class='header'>
+        <div class='wrapper h-full'>
+            <div class='flex gap-64 items-center h-full'>
+                <img src='images/logo.png' alt='logo' class='header__logo header__logo1'/>
+                <img src='images/logo2.png' class='header__logo header__logo2'/>
+                <nav class='nav'>
+                  <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='company.html' class="active">Company</a></li>
+                    <li><a href=''>Industries</a></li>
+                    <li><a href=''>Contact</a></li>
+                  </ul>
+                </nav>
+                <button class='header__quote'>Get a quote</button>
+            </div>
+        </div>
+    </header>
+    <div class="banner__section company">
+        <div class="banner__content">
+            <h1>Provide better engineering solution for Energy and Oil & Gas field </h1>
+            <p>Provide better Engineering Solution for Energy and Oil & Gas field</p>
+            <a href="#">About us</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 8000,
+            autoplayDisableOnInteraction: false
+        });
+      </script>
+</body>
+</html>
