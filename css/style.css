@@ -6,8 +6,8 @@
 .header {
   width: 100%;
   height: 90px;
-  background-color: #04202F;
-  position: sticky;
+  background-color: rgba(4, 32, 47, 0.6);
+  position: fixed;
   top: 0;
   z-index: 2;
   transition: all 100ms ease-in;
@@ -80,11 +80,13 @@
   line-height: 92px;
   font-weight: 700;
   width: 80%;
+  text-shadow: 2px 2px 8px #000;
 }
 .banner__p, .banner__section p {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
+  text-shadow: 2px 2px 8px #000;
 }
 .banner__btn, .about__btn, .banner__section a {
   background-color: #fff;
@@ -98,7 +100,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
 .banner__section.company {
   background-image: url("../images/banner2.jpg");
@@ -110,7 +112,7 @@
   width: 86%;
   margin: 0 auto;
   position: relative;
-  top: 3rem;
+  top: 5rem;
 }
 
 .about__h2 {
@@ -290,10 +292,19 @@
 }
 
 .swiper-container {
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
-
-.swiper-slide img {
+.swiper-container .swiper-slide img {
   width: 100% !important;
   visibility: visible;
+  height: 100vh;
+}
+.swiper-container .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  opacity: 1;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  background: #007aff;
 }
