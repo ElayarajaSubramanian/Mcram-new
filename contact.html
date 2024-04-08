@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McRam | Provide better Engineering Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
+</head>
+<body>
+    <header class='header'>
+        <div class='wrapper h-full'>
+            <div class='flex gap-64 items-center h-full'>
+                <img src='images/logo.png' alt='logo' class='header__logo header__logo1'/>
+                <img src='images/logo2.png' class='header__logo header__logo2'/>
+                <nav class='nav'>
+                  <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='company.html'>Company</a></li>
+                    <li><a href='industries.html' >Industries</a></li>
+                    <li><a href='contact.html' class="active">Contact</a></li>
+                  </ul>
+                </nav>
+                <button class='header__quote'>Get a quote</button>
+            </div>
+        </div>
+    </header>
+    <div class="banner__section company">
+        <div class="banner__content">
+            <h1>Contact us</h1>
+        </div>
+    </div>
+    <div class="wrapper py-10">
+        <div class="flex justify-between">
+            <div class='flex flex-col gap-6'>
+                <h2 class='about__h2'>Send us your questions about Mcram<br/><span class='about__line'></span></h2>
+                <form action="" class='contact__form'>
+                    <input type="text" name="Your name" id="" placeholder="Your Name">
+                    <input type="email" name="Your email" id="" placeholder="Your Email">
+                    <input type="tel" name="Your mobile no" id="" placeholder="Your Mobile No">
+                    <textarea name="Your message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="contact__formbtn">Submit</button>
+                </form>
+            </div>
+            <div class="w-[50%] gap-8 flex flex-col">
+                <div class="leading-8">
+                    <h2 class="font-medium text-xl">Mcram (Head office)</h2>
+                    <p>Rattha Tek Meadows, 1st floor</p>
+                    <p>OMR, Sholinganallur</p>
+                    <p>Chennai - 600126</p>
+                    <p><b>Tel : </b>+39 0244231</p>
+                    <p><b>Fax : </b> +39 0244244506</p>
+                </div>
+                <div class="leading-8">
+                    <h2 class="font-medium text-xl">Mcram - Italy</h2>
+                    <p>Via Toniolo, 1 - 61032 Fano,</p>
+                    <p>Pesaro e Urbino</p>
+                    <p>Italy</p>
+                    <p><b>Tel : </b>+39 0244231</p>
+                    <p><b>Fax : </b> +39 0244244506</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 8000,
+            autoplayDisableOnInteraction: false
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McRam | Provide better Engineering Solution</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
+</head>
+<body>
+    <header class='header'>
+        <div class='wrapper h-full'>
+            <div class='flex gap-64 items-center h-full'>
+                <img src='images/logo.png' alt='logo' class='header__logo header__logo1'/>
+                <img src='images/logo2.png' class='header__logo header__logo2'/>
+                <nav class='nav'>
+                  <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='company.html'>Company</a></li>
+                    <li><a href='industries.html' class="active">Industries</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                  </ul>
+                </nav>
+                <button class='header__quote'>Get a quote</button>
+            </div>
+        </div>
+    </header>
+    <div class="banner__section company">
+        <div class="banner__content">
+            <h1>Industries</h1>
+        </div>
+    </div>
+    <div class="wrapper py-10">
+        <div class='flex flex-col gap-6'>
+            <h2 class='about__h2'>Engineering Services<br/><span class='about__line'></span></h2>
+            <div class='flex flex-col gap-6'>
+                <p class='leading-8'>Is a multidisciplinary consulting and engineering firm, providing solutions for Onshore and Offshore plant design for following industries.
+                </p>
+            </div>
+        </div>
+        <h2 class="font-bold text-xl py-8">Oil & Gas industries</h2>
+        <div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Onshore')" id="defaultOpen">Onshore E&C</button>
+                <button class="tablinks" onclick="openCity(event, 'Offshore')">Offshore E&C</button>
+                <button class="tablinks" onclick="openCity(event, 'BrownField')">Brown Field Engineering</button>
+                <button class="tablinks" onclick="openCity(event, 'FEAStudy')">FEA Study</button>
+            </div>
+
+            <div id="Onshore" class="tabcontent">
+            <h3 class="text-xl font-medium py-6">Onshore E&C</h3>
+                <div class="flex justify-between gap-6">
+                    <div class="flex flex-col">
+                        <img src="images/onshore.png" alt="">
+                        <div class="industries__card">
+                            <h3>Refinery and Petro chemical industries</h3>
+                            <p>Our skills and what we provide includes concept, feasibility Studies, design -engineering of the all Onshore plants.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="images/onshore.png" alt="">
+                        <div class="industries__card">
+                            <h3>Refinery and Petro chemical industries</h3>
+                            <p>Our skills and what we provide includes concept, feasibility Studies, design -engineering of the all Onshore plants.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="images/onshore.png" alt="">
+                        <div class="industries__card">
+                            <h3>Refinery and Petro chemical industries</h3>
+                            <p>Our skills and what we provide includes concept, feasibility Studies, design -engineering of the all Onshore plants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Offshore" class="tabcontent">
+            <h3 class="text-xl font-medium">Offshore E&C</h3>
+            <div class="flex gap-6 flex-col">
+                <ol>
+                    <li>Offshore platforms</li>
+                    <li>Floaters design</li>
+                </ol>
+
+                <p>McRam engineering is specialized in providing development concepts and technical solutions to the
+                upstream oil and gas industry. We challenge ourselves to provide the best business solution to meet
+                each client requirement through the provision of best resources and exceptional performance.</p>
+                <p>For many offshore projects, from fixed platform to Floaters, The design of a preliminary site layout and
+                plot plan provides insight into the general arrangement of major equipment, structures, and utilities will
+                be carried out.</p>
+            </div>
+            </div>
+            
+            <div id="BrownField" class="tabcontent">
+            <h3 class="text-xl font-medium">Brown Field Engineering</h3>
+            <div class="flex gap-6 flex-col">
+                <p><b>3D Laser scanning</b></p>
+                <p>3D Laser Scanning is a non- contact, non-destructive technology that digitally captures the shape of
+                    physical objects using a line of laser light. 3D laser scanners measure fine details and capture free-form shapes to quickly generate highly accurate “point clouds” of data from the surface of an object. In other words, 3D laser scanning is a way to capture a physical object’s exact size and shape into the computer to create impactful 3D deliverable as a digital 3-dimensional representation.</p>
+
+                    <p>3D laser scanning is ideally suited to the measurement and inspection of contoured surfaces and
+                    complex geometries which require massive amounts of data for their accurate description and where
+                    doing this is impractical with the use of traditional measurement methods or a touch probe.</p>
+                    <p>3D Model developed from point cloud as an actual size representation or as an intelligent model based on project requirement.</p>
+            </div>
+            </div>
+
+            <div id="FEAStudy" class="tabcontent">
+            <h3 class="text-xl font-medium">FEA Study</h3>
+            <p>Content will be updated</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 8000,
+            autoplayDisableOnInteraction: false
+        });
+      </script>
+</body>
+</html>
