@@ -44,13 +44,13 @@
         <h2 class="font-bold text-xl py-8">Oil & Gas industries</h2>
         <div>
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Onshore')" id="defaultOpen">Onshore E&C</button>
-                <button class="tablinks" onclick="openCity(event, 'Offshore')">Offshore E&C</button>
-                <button class="tablinks" onclick="openCity(event, 'BrownField')">Brown Field Engineering</button>
-                <button class="tablinks" onclick="openCity(event, 'FEAStudy')">FEA Study</button>
+                <button class="tablinks active" onclick="openIndustry(event, 'Onshore')" id="defaultOpen">Onshore E&C</button>
+                <button class="tablinks" onclick="openIndustry(event, 'Offshore')">Offshore E&C</button>
+                <button class="tablinks" onclick="openIndustry(event, 'BrownField')">Brown Field Engineering</button>
+                <button class="tablinks" onclick="openIndustry(event, 'FEAStudy')">FEA Study</button>
             </div>
 
-            <div id="Onshore" class="tabcontent">
+            <div id="Onshore" class="tabcontent active">
             <h3 class="text-xl font-medium py-6">Onshore E&C</h3>
                 <div class="flex justify-between gap-6">
                     <div class="flex flex-col">
