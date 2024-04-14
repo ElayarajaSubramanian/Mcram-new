@@ -295,6 +295,9 @@
         visibility: visible;
         height: 100vh;
     }
+    img.slider-img{
+        display: none;
+    }
     .swiper-pagination-bullet {
         width: 14px;
         height: 14px;
@@ -404,6 +407,57 @@
         h3{
             font-size: 20px;
             font-weight: 600;
+        }
+    }
+  }
+  /* .activity-slider{
+    gap: 1%;
+    .card{
+        width: 24%;
+    }
+  } */
+
+
+  @media (max-width: 767px){
+    .banner{
+        width: 74%;
+        &__h1{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    .swiper-container{
+        height: 97vh;
+        .swiper-slide{
+            img.slider-img{
+                object-fit: cover;
+                display: block;
+            }
+            video{
+                display: none;
+            }
+        }
+    }
+    .banner__content{
+        width: 84%;
+    }
+    .wrapper{
+        width: 88%;
+    }
+    .nav{
+        display: none;
+    }
+    .header__quote{
+        display: none;
+    }
+    .about{
+        &__services{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: fit-content;
+        }
+        &__arrow{
+            display: none;
         }
     }
   }

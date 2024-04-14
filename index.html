@@ -45,9 +45,10 @@
                     </div>
                 </div>
                 <!-- VIDEO -->
-                <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;">
+                <video class="slider-video" width="100%" preload="auto" loop="" autoplay muted playsinline style="visibility: visible; width: 100%;">
                     <source src="videos/video1.mp4" type="video/mp4">
                 </video>
+                <img src="images/1a.jpg" alt="" class="slider-img">
                 <!-- END VIDEO -->
             </div>
             <div id="slide_two" class="swiper-slide">
@@ -59,9 +60,10 @@
                     </div>
                 </div>
             <!-- end #lab_overlay -->
-                <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;">
+                <video class="slider-video" width="100%" preload="auto" loop="" autoplay muted playsinline style="visibility: visible; width: 100%;">
                     <source src="videos/video2.mp4" type="video/mp4">
                 </video>
+                <img src="images/1c.jpg" alt="" class="slider-img">
             </div>
             <div id="slide_three" class="swiper-slide">
                 <div class="banner">
@@ -72,9 +74,10 @@
                     </div>
                 </div>
                 <!-- VIDEO -->
-                <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;">
+                <video class="slider-video" width="100%" preload="auto" loop="" autoplay muted playsinline style="visibility: visible; width: 100%;">
                     <source src="videos/video3.mp4" type="video/mp4">
                 </video>
+                <img src="images/1d.jpg" alt="" class="slider-img">
                 <!-- END VIDEO -->
             </div>
             <div id="slide_four" class="swiper-slide">
@@ -98,7 +101,7 @@
     </div>
       <!-- Swiper JS -->
     <div class='wrapper py-10'>
-        <div class='flex justify-center gap-5'>
+        <div class='flex justify-center gap-5 flex-col md:flex-row'>
             <div class='flex flex-col gap-6'>
                 <h2 class='about__h2'>About us<br/><span class='about__line'></span></h2>
                 <div class='flex flex-col gap-6'>
@@ -143,7 +146,7 @@
             <p class='text-xl'>Engineering excellence for a better tommorow</p>
             <p class='font-semibold text-3xl w-[70%]'>Providing solutions for Onshore and Offshore plant design for</p>
         </div>
-        <div class='grid grid-cols-4 gap-12 w-[88%] mx-auto my-0'>
+        <div class='grid grid-cols-100 md:grid-cols-4 gap-12 w-[88%] mx-auto my-0'>
             <div class='about__expertise about__expertise--greenbg'>
                 <div class='flex flex-col gap-4 pb-5'>
                     <img src='images/expertise-white.svg' class='about__expertise--icon' alt='expertise'/>
@@ -202,8 +205,8 @@
             <h2 class='about__h2'>Activities<br/><span class='about__line'></span></h2>
             <div class='wrapper flex items-center justify-center gap-6'>
                 <button class='about__arrow'><img src='images/arrow-left.svg'/></button>
-                <div class='flex justify-between gap-4 w-[80%]'>
-                    <div class='flex flex-col'>
+                <div class='flex justify-between w-90 md:w-[80%] activity-slider flex-col md:flex-row gap-6'>
+                    <div class='flex flex-col card'>
                         <img src='images/slider-img.jpg' alt='slider'/>
                         <div class='about__activities--content'>
                             <div>
@@ -212,7 +215,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
                         </div>
                     </div>
-                    <div class='flex flex-col'>
+                    <div class='flex flex-col card'>
                         <img src='images/slider-img.jpg' alt='slider'/>
                         <div class='about__activities--content'>
                             <div>
@@ -221,7 +224,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
                         </div>
                     </div>
-                    <div class='flex flex-col'>
+                    <div class='flex flex-col card'>
                         <img src='images/slider-img.jpg' alt='slider'/>
                         <div class='about__activities--content'>
                             <div>
@@ -230,7 +233,43 @@
                             <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
                         </div>
                     </div>
-                    <div class='flex flex-col'>
+                    <div class='flex flex-col card'>
+                        <img src='images/slider-img.jpg' alt='slider'/>
+                        <div class='about__activities--content'>
+                            <div>
+                                <h3>Validation Of Supports</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
+                    </div>
+                    <div class='flex flex-col card'>
+                        <img src='images/slider-img.jpg' alt='slider'/>
+                        <div class='about__activities--content'>
+                            <div>
+                                <h3>3D Modelling</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
+                    </div>
+                    <div class='flex flex-col card'>
+                        <img src='images/slider-img.jpg' alt='slider'/>
+                        <div class='about__activities--content'>
+                            <div>
+                                <h3>Piping Stress Analysis</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
+                    </div>
+                    <div class='flex flex-col card'>
+                        <img src='images/slider-img.jpg' alt='slider'/>
+                        <div class='about__activities--content'>
+                            <div>
+                                <h3>Support Detailing</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Massa morbi sed amet nibh auctor </p>
+                        </div>
+                    </div>
+                    <div class='flex flex-col card'>
                         <img src='images/slider-img.jpg' alt='slider'/>
                         <div class='about__activities--content'>
                             <div>

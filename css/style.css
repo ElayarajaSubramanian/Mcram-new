@@ -278,6 +278,9 @@
   visibility: visible;
   height: 100vh;
 }
+.swiper-container img.slider-img {
+  display: none;
+}
 .swiper-container .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
@@ -387,4 +390,50 @@
 .industries__card h3 {
   font-size: 20px;
   font-weight: 600;
+}
+
+/* .activity-slider{
+  gap: 1%;
+  .card{
+      width: 24%;
+  }
+} */
+@media (max-width: 767px) {
+  .banner {
+    width: 74%;
+  }
+  .banner__h1, .banner__section h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .swiper-container {
+    height: 97vh;
+  }
+  .swiper-container .swiper-slide img.slider-img {
+    object-fit: cover;
+    display: block;
+  }
+  .swiper-container .swiper-slide video {
+    display: none;
+  }
+  .banner__content {
+    width: 84%;
+  }
+  .wrapper {
+    width: 88%;
+  }
+  .nav {
+    display: none;
+  }
+  .header__quote {
+    display: none;
+  }
+  .about__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+  }
+  .about__arrow {
+    display: none;
+  }
 }

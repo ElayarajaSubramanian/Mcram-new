@@ -53,6 +53,10 @@ function openIndustry(evt, industryName) {
 
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+const activitySlider = document.querySelector(".activity-slider");
 
+const dragging = (e) => {
+  activitySlider.scrollLeft = e.pageX;
+}
+
+activitySlider.addEventListener("mousemove", dragging)
