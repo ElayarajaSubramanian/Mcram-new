@@ -162,15 +162,30 @@
   gap: 1rem;
   border-radius: 8px;
   padding: 20px 15px;
-}
-.about__expertise--greenbg {
-  background-color: #81C03D;
-  color: #fff;
-}
-.about__expertise--whitebg {
   background-color: #fff;
   color: #08415F;
   box-shadow: 0 4px 4px rgba(129, 192, 61, 0.5);
+  fill: #81C03D;
+}
+.about__expertise:hover {
+  background-color: #81C03D;
+  color: #fff;
+  box-shadow: none;
+}
+.about__expertise:hover svg {
+  fill: #fff;
+}
+.about__expertise:hover .about__expertise--blackbrd {
+  border-top-color: #fff;
+}
+.about__expertise:hover .about__expertise--arrow {
+  background-color: #fff;
+}
+.about__expertise:hover .about__expertise--greenicon {
+  display: none;
+}
+.about__expertise:hover .about__expertise--whiteicon {
+  display: block;
 }
 .about__expertise--icon {
   width: 80px;
@@ -198,6 +213,18 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
+}
+.about__expertise--arrow {
+  background-color: #81C03D;
+  border-radius: 50%;
+  padding: 5px;
+}
+.about__expertise--whiteicon {
+  display: none;
+}
+.about__expertise--iconsec img {
+  width: 80px;
+  height: auto;
 }
 .about__readbtn {
   border-radius: 50px;

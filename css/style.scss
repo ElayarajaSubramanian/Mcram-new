@@ -180,14 +180,29 @@
         gap: 1rem;
         border-radius: 8px;
         padding: 20px 15px;
-        &--greenbg{
+        background-color: #fff;
+        color: #08415F;
+        box-shadow: 0 4px 4px rgba(129, 192, 61, 0.5);
+        fill: #81C03D;
+        &:hover{
             background-color: #81C03D;
             color: #fff;
-        }
-        &--whitebg{
-            background-color: #fff;
-            color: #08415F;
-            box-shadow: 0 4px 4px rgba(129, 192, 61, 0.5);
+            box-shadow: none;
+            svg{
+                fill: #fff;
+            }
+            .about__expertise--blackbrd{
+                border-top-color: #fff;
+            }
+            .about__expertise--arrow{
+                background-color: #fff;
+            }
+            .about__expertise--greenicon{
+                display: none;
+            }
+            .about__expertise--whiteicon{
+                display: block;
+            }
         }
         &--icon{
             width: 80px;
@@ -215,6 +230,20 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp:4;
             overflow: hidden;
+        }
+        &--arrow{
+            background-color: #81C03D;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        &--whiteicon{
+            display: none;
+        }
+        &--iconsec{
+            img{
+                width: 80px;
+                height: auto;
+            }
         }
     }
     &__readbtn{
