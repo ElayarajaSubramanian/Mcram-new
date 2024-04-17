@@ -5,7 +5,7 @@
 .header{
     width: 100%;
     height: 90px;
-    background-color: rgba(4, 32, 47,0.6);
+    background-color: transparent;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -84,13 +84,13 @@
         line-height: 92px;
         font-weight: 700;
         width: 80%;
-        text-shadow: 2px 2px 8px #000;
+        // text-shadow: 2px 2px 8px #000;
     }
     &__p{
         font-size: 24px;
         font-weight: 400;
         color: #fff;
-        text-shadow: 2px 2px 8px #000;
+        // text-shadow: 2px 2px 8px #000;
     }
     &__btn{
         background-color: #fff;
@@ -311,6 +311,10 @@
         justify-content: space-between;
         width: 88%;
         margin: 0 auto;
+        img{
+            width: 100px !important;
+            height: auto;
+        }
     }
     &__arrow{
         width: 50px;
@@ -319,6 +323,7 @@
 }
 .swiper-container{
     height: 100vh;
+    background-color: rgba(4, 32, 47,0.6);
     .swiper-slide img{
         width: 100% !important;
         visibility: visible;
@@ -335,6 +340,18 @@
     }
     .swiper-pagination-bullet-active{
         background: #007aff;
+    }
+    .swiper-slide{
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(4, 32, 47,0.4);
+        }
     }
 } 
 
@@ -439,12 +456,18 @@
         }
     }
   }
-  /* .activity-slider{
+  .activity-slider{
+    overflow: hidden;
     gap: 1%;
     .card{
         width: 24%;
     }
-  } */
+    .slick-track{
+        display: flex;
+        justify-content: space-between;
+        gap: 1%;
+    }
+  }
 
 
   @media (max-width: 767px){

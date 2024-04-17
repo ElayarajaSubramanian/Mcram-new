@@ -6,7 +6,7 @@
 .header {
   width: 100%;
   height: 90px;
-  background-color: rgba(4, 32, 47, 0.6);
+  background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -80,13 +80,11 @@
   line-height: 92px;
   font-weight: 700;
   width: 80%;
-  text-shadow: 2px 2px 8px #000;
 }
 .banner__p, .banner__section p {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
-  text-shadow: 2px 2px 8px #000;
 }
 .banner__btn, .about__btn, .banner__section a {
   background-color: #fff;
@@ -292,6 +290,10 @@
   width: 88%;
   margin: 0 auto;
 }
+.about__clients img {
+  width: 100px !important;
+  height: auto;
+}
 .about__arrow {
   width: 50px;
   height: auto;
@@ -299,6 +301,7 @@
 
 .swiper-container {
   height: 100vh;
+  background-color: rgba(4, 32, 47, 0.6);
 }
 .swiper-container .swiper-slide img {
   width: 100% !important;
@@ -316,6 +319,16 @@
 }
 .swiper-container .swiper-pagination-bullet-active {
   background: #007aff;
+}
+.swiper-container .swiper-slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 32, 47, 0.4);
 }
 
 .card_slider {
@@ -419,12 +432,19 @@
   font-weight: 600;
 }
 
-/* .activity-slider{
+.activity-slider {
+  overflow: hidden;
   gap: 1%;
-  .card{
-      width: 24%;
-  }
-} */
+}
+.activity-slider .card {
+  width: 24%;
+}
+.activity-slider .slick-track {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+
 @media (max-width: 767px) {
   .banner {
     width: 74%;

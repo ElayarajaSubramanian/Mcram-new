@@ -13,9 +13,9 @@ var no_of_slides, arrows_to_show;
 
 //OnWindowResize
 if (window.matchMedia("(max-width: 920px)").matches === true && window.matchMedia("(max-width: 621px)").matches === false) {
-    no_of_slides = 2; arrows_to_show = true;
+    no_of_slides = 4; arrows_to_show = true;
 } else if (window.matchMedia("(max-width: 620px)").matches === true) {
-    no_of_slides = 1; arrows_to_show = false;
+    no_of_slides = 3; arrows_to_show = false;
 } else {
     no_of_slides = 6, arrows_to_show = true;
 }
@@ -28,7 +28,32 @@ $('.card-slider').slick({
     arrows:arrows_to_show,
     autoplay: true,
     autoplaySpeed: 2000,
-    infinite: true
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
 });
 
 function openIndustry(evt, industryName) {
@@ -59,4 +84,40 @@ const dragging = (e) => {
   activitySlider.scrollLeft = e.pageX;
 }
 
-activitySlider.addEventListener("mousemove", dragging)
+activitySlider.addEventListener("mousemove", dragging);
+
+
+
+//Activity Slider
+$('.activity-slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
