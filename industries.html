@@ -9,14 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <header class='header'>
+        <a href="#" class="header__menu" id="hamburger">
+            <i class="fa fa-bars header__hamburgermenu"></i>
+          </a>
         <div class='wrapper h-full'>
-            <div class='flex gap-64 items-center h-full'>
-                <img src='images/logo.png' alt='logo' class='header__logo header__logo1'/>
-                <img src='images/logo2.png' class='header__logo header__logo2'/>
-                <nav class='nav'>
+            <div class='flex gap-64 items-center h-full flex-col md:flex-row'>
+                <a href="index.html"><img src='images/logo.png' alt='logo' class='header__logo header__logo1'/><img src='images/logo2.png' class='header__logo header__logo2'/></a>
+                <nav class='nav' id="nav">
+                    <a href="#" class="nav__close" id="close"><i class="fa-solid fa-xmark"></i></a>
                   <ul>
                     <li><a href='index.html'>Home</a></li>
                     <li><a href='company.html'>Company</a></li>
@@ -52,7 +61,7 @@
 
             <div id="Onshore" class="tabcontent active">
             <h3 class="text-xl font-medium py-6">Onshore E&C</h3>
-                <div class="flex justify-between gap-6">
+                <div class="flex justify-between gap-6 flex-col md:flex-row">
                     <div class="flex flex-col">
                         <img src="images/onshore.png" alt="">
                         <div class="industries__card">
@@ -115,19 +124,5 @@
         </div>
     </div>
     <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
-
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30,
-            autoplay: 8000,
-            autoplayDisableOnInteraction: false
-        });
-      </script>
 </body>
 </html>

@@ -78,16 +78,6 @@ function openIndustry(evt, industryName) {
 
 }
 
-const activitySlider = document.querySelector(".activity-slider");
-
-const dragging = (e) => {
-  activitySlider.scrollLeft = e.pageX;
-}
-
-activitySlider.addEventListener("mousemove", dragging);
-
-
-
 //Activity Slider
 $('.activity-slider').slick({
   dots: true,
@@ -121,3 +111,14 @@ $('.activity-slider').slick({
     }
   ]
 });
+
+
+const menu = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+const close = document.getElementById("close");
+menu.addEventListener("click", () => {
+  nav.classList.toggle("show");
+})
+close.addEventListener("click", () => {
+  nav.classList.remove("show");
+})
