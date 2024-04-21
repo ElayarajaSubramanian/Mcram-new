@@ -79,7 +79,7 @@
     height: fit-content;
     position: absolute;
     margin: 0 auto;
-    top: 3rem;
+    top: 5rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -111,7 +111,7 @@
         background-size: cover;
         width: 100%;
         height: 75vh;
-        padding-top: 3rem;
+        padding-top: 5rem;
         &.company{
             background-image: url('../images/banner2.jpg');
         }
@@ -310,6 +310,9 @@
                 color: rgba(0, 0, 0, 0.45);
             }
         }
+        &--title{
+            min-height: 45px;
+        }
     }
     &__clients{
         display: flex;
@@ -410,10 +413,10 @@
   
   /* Style the tab content */
   .tabcontent {
-    padding: 12px;
+    padding: 0 12px 12px 12px; 
     width: 100%;
     border: none;
-    height: 300px;
+    height: fit-content;
     display: none;
     line-height: 28px;
     &.active{
@@ -425,6 +428,11 @@
             list-style-position: inside;
             text-indent: 2rem;
         }
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
     }
   }
   .contact{
@@ -468,11 +476,17 @@
     gap: 1%;
     .card{
         width: 24%;
+        flex: 1;
+        img{
+            height: 150px;
+            width: 100%;
+        }
     }
     .slick-track{
         display: flex;
         justify-content: space-between;
-        gap: 1%;
+        gap: 12px;
+        align-items: flex-start;
     }
   }
 
