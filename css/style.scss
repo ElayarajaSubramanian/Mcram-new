@@ -216,7 +216,7 @@
         }
         &--btnsec{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             padding: 2rem 0 0 0;
         }
@@ -234,7 +234,7 @@
             line-height: 28px;
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp:4;
+            -webkit-line-clamp:3;
             overflow: hidden;
         }
         &--arrow{
@@ -254,7 +254,9 @@
     }
     &__readbtn{
         border-radius: 50px;
-        padding: 0 10px;
+        padding: 0 0 0 10px;
+        display: flex;
+        gap: 10px;
         &--whitebg{
             background-color: #fff;
             border: 1px solid #81C03D;
@@ -321,7 +323,7 @@
         width: 88%;
         margin: 0 auto;
         img{
-            width: 100px !important;
+            width: 120px !important;
             height: auto;
         }
     }
